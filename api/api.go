@@ -18,7 +18,8 @@ type mux struct {
 
 func (m *mux) InitDb(dsn string) *mux {
 	db, err := gorm.Open(postgres.Open(dsn), &gorm.Config{
-		Logger:                 logger.Default.LogMode(logger.Error),
+		// Logger: logger.Default.LogMode(logger.Error),
+		Logger:                 Logger{}.LogMode(logger.Error),
 		SkipDefaultTransaction: true, // 禁用默认事务
 	})
 	if err != nil {
