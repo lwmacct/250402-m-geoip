@@ -10,6 +10,10 @@ type TsFlag struct {
 	App struct {
 		ListenAddr string   `group:"app" note:"Http 监听地址" default:"0.0.0.0:8888"`
 		Plugin     []string `group:"app" note:"插件, 启用的插件列表" default:""`
+
+		DSN struct {
+			PGSQL string `group:"app" note:"Postgresql 数据库连接字符串" default:""`
+		}
 	}
 
 	Server struct {
