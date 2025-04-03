@@ -8,7 +8,7 @@ type TsFlag struct {
 	Start struct{} `group:"start" note:"默认配置"`
 
 	App struct {
-		ListenAddr string   `group:"app" note:"Http 监听地址" default:"0.0.0.0:8888"`
+		ListenAddr string   `group:"app" note:"Http 监听地址" default:"0.0.0.0:12119"`
 		Plugin     []string `group:"app" note:"插件, 启用的插件列表" default:""`
 
 		DSN struct {
