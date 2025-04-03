@@ -49,7 +49,7 @@ services:
      - app
      - start
      - run
-     - --app-label
+     - --label
      - "$_apps_name"
 EOF
 }
