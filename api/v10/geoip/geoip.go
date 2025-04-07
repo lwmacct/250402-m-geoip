@@ -22,6 +22,7 @@ type main struct {
 
 func (t *main) Register(r *gin.RouterGroup) {
 	rg := r.Group("geoip")
+	rg.GET("", t.Get)
 	rg.GET(":ip", t.Get)
 	rg.POST("", t.Post)
 	rg.PUT("", t.Put)

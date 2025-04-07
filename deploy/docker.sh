@@ -43,7 +43,7 @@ services:
      - TZ=Asia/Shanghai
      - ACF_LOG_LEVEL=8
      - ACF_LOG_FILE=/apps/data/run.log
-     - ACF_APP_LISTEN_ADDR=0.0.0.0:12119
+     - ACF_APP_LISTEN_ADDR=0.0.0.0:8000
 
    command:
      - app
