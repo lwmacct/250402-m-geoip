@@ -1,13 +1,46 @@
-.local/*
-Dockerfile
-
-# 文件
-**/.env
-**/*.log
+# 本地环境
 **/.DS_Store
+**/.local/*
+**/.venv/*
+**/.conda/*
+**/.task/remote/*
+
+# 构建输出
+**/dist/**
+**/build/**
+**/*.vsix
+**/bin/
+
+# 秘密文件
+**/.env
+**/.secret/*
+**/config/config.yaml
+
+# node_modules
+**/node_modules/**
+**/tsconfig.tsbuildinfo
 
 # 临时目录
 **/tmp/**
+**/log/**
 **/logs/**
 **/temp/**
 **/cache/**
+
+# 临时文件
+**/*.bak
+**/*.log
+**/*.tmp
+**/*.out
+**/*.temp
+**/*.cache
+
+# python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pyw
+*.pyz
+*.pywz
+*.pyzw
